@@ -1,3 +1,3 @@
-# photo-album
+My first photo album front page with pictures animation.
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/photo-album)
+Kodilla (https://kodilla.com/pl) exercise.
