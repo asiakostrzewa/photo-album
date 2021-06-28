@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #C5BCBA;
+  /*kody kolorów: https://htmlcolorcodes.com/color-picker/ */
+}
+
+.wrapper {
+  width: 100%;
+  padding: 0 2rem;
+  text-align: center;
+}
+.polaroid {
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+  
+}
+.polaroid > img{
+  max-width: 100%;
+  height: auto;
+}
+.caption {
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 2em;
+}
+.item {
+  width: 30%;
+  display: inline-block;
+  margin-top: 2rem;
+  /*filter: grayscale(100%);*/
+}
+
+.item2 {
+  transform: scale(0.8, 0.8) rotate(5deg);
+  transition: all 0.35s;
+}
+
+.item:hover {
+  filter: none;
+  transform: scale(1, 1) rotate(0deg) !important;
+  transition: all 0.35s;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+  /*parametry RGBA: R – red, G – green, B – blue oraz dodatkowo A – alpha (kanał alfa). Zmieniając ostatnią wartość 2 na większą - cień jest mniej transparentny i bardziej nasycony.*/
+}
