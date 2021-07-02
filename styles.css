@@ -36,13 +36,13 @@ body {
 
 .item2 {
   transform: scale(0.8, 0.8) rotate(5deg);
-  transition: all 0.35s;
+  transition: transform 0.35s; /*niewłaściwą praktyką jest wykorzytywanie w transition "all" zamiast odnośnika do właściwej sekcji - tutaj: "transform", ponieważ "all" poprzez odniesienie do wszystkich sekcji - bardzo obciąża stronę*/
 }
 
 .item:hover {
   filter: none;
   transform: scale(1, 1) rotate(0deg) !important;
-  transition: all 0.35s;
+  transition: transform 0.35s;
   box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
   /*parametry RGBA: R – red, G – green, B – blue oraz dodatkowo A – alpha (kanał alfa). Zmieniając ostatnią wartość 2 na większą - cień jest mniej transparentny i bardziej nasycony.*/
 }
